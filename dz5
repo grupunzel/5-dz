@@ -1,0 +1,59 @@
+#0.6 task
+price = int(input("Price of 1 kg of sweets: "))
+for i in range(1, 11):
+    if price * i <= 100:
+        print(i, 'kg of sweets costs', price * i)
+    else:
+        break
+
+#0.7 task
+a = int(input("a = "))
+b = int(input("b = "))
+summ = 0
+for i in range(a, b + 1):
+    summ += i
+print("Sum from", a, 'to', b, '=', summ)
+
+#0.8 task
+n = int(input('n = '))
+k = int(input("k = "))
+stri = ''
+for i in range(1, n + 1):
+    stri += str(k)
+print(stri)
+
+#0.9 task
+n = int(input("n = "))
+summ = 0
+for i in range(2, n + 1, 2):
+    summ += i
+print("Summary is", summ)
+
+#1 task
+for i in range(1, 11):
+    for j in range(1, 11):
+        print(i, "*", j, '=', i * j)
+
+#2 task
+num_1 = int(input("1st number: "))
+num_2 = int(input("2nd number: "))
+for i in range(num_1, num_2 + 1):
+    for j in range(num_1, num_2 + 1):
+        print(i, "*", j, '=', i * j)
+
+#3 task
+length = int(input("Length: "))
+width = int(input("Width: "))
+for i in range(0, width + 2):
+    if i == 0 or i == width + 1:
+        print(" " + " — " * length + " ")
+    else:
+        print("|" + "   " * length + "|")
+
+#4 task
+list_ = input("Input list elements separated by , : ")
+list_1 = list_.split(", ")
+summ = 0
+for i in range(0, len(list_1)):
+    summ += int(list_1[i])
+print("Summary is", summ)
